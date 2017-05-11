@@ -492,6 +492,7 @@ textarea {
   font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
   color: #636363;
   font-size: 14px;
+  font-weight: 10px;
   line-height: 1.5;
 }
 
@@ -1132,7 +1133,7 @@ a.button:hover {
  */
 .breadcrumbs {
   overflow: hidden;
-  margin: -15px 0 15px;
+  margin: 3px 53px 4px;
 }
 
 .breadcrumbs li {
@@ -1301,7 +1302,7 @@ a.button:hover {
 @media only screen and (min-width: 480px) {
   .main-container,
   .footer-container {
-    padding: 30px;
+    padding: 0px;
   }
 }
 .footer-container {
@@ -3131,6 +3132,7 @@ body {
 .header-language-container,
 .page-header {
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  #background-image: url("../images/fondo_header.jpg");
 }
 
 /* ============================================ *
@@ -3919,6 +3921,9 @@ a.skip-link {
   width: 100%;
   border-top: 1px solid #cccccc;
   padding-top: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   /* -------------------------------------------- *
    * Social icons
    */
@@ -4218,6 +4223,7 @@ p.product-name a:hover {
 .products-grid .product-info {
   position: relative;
   padding-bottom: 95px;
+  padding-bottom: 149px;
 }
 
 .products-grid .actions {
@@ -6586,7 +6592,7 @@ p.product-name a:hover {
 }
 .shipping .form-list label {
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 8px;
   font-weight: 400;
   text-transform: uppercase;
 }
