@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<package>
+    <name>Categorized_Product_Slider</name>
+    <version>1.0.2</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/MIT">Massachusetts Institute of Technology License (MITL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Categorized Product Slider allows you to display the product from your desired category in a slide format.</summary>
+    <description>Categorized Product Slider is built on top of OWL Carousel JS. OWL Carousel is a touch enabled jQuery plugin that lets you create beautiful responsive carousel slider. This extension will provide user with an ability to create any number of product sliders based on the product category. The extension provides admin with full control over displaying desired number of products, Product pagination/navigation colours and display of "New" and "Sale" product tags for the products. It can be called using the short-codes.&#xD;
+&#xD;
+Demo Link: http://extensiondemo.vsourz.co/categories-product-slider&#xD;
+&#xD;
+Got Stuck? Need Support? Click Here&#xD;
+&#xD;
+Features:&#xD;
+- Categorized product slider with ability to create unlimited numbers of product category sliders.&#xD;
+- Flexible options to customize slider style&#xD;
+- Responsive and mobile friendly with autoplay and lazy-loading functionality.&#xD;
+- Ability to specify image size/dimension from the backend&#xD;
+- Display/Hide Product ratings, Add to cart, Wish-list and Compare products options.&#xD;
+&#xD;
+How to use?&#xD;
+&#xD;
+1) Go to System &gt;&gt; Configuration &gt;&gt; Category Product Slider &gt;&gt; Slider Settings and configure the slider settings as shown in screenshot.&#xD;
+&#xD;
+2) Go to System &gt;&gt; Configuration &gt;&gt; Category Product Slider &gt;&gt; Product Settings and configure how you want to display the products on website. Please check screenshot below&#xD;
+&#xD;
+3) Call the product slider using any of the below shortcode.&#xD;
+&#xD;
+Shortcode&#xD;
+&#xD;
+    ADMIN:&#xD;
+        {{block type="vsourz_catproduct/productslider" category_id="2" title="Product Slider" template="vsourz/products/productslider.phtml" product_count="12"}}&#xD;
+&#xD;
+    XML:&#xD;
+        &lt;reference name="content"&gt;&lt;block type="vsourz_catproduct/productslider" name="catproduct" template="vsourz/products/productslider.phtml"&gt;&lt;action method="setCategoryId"&gt;&lt;category_id&gt;2&lt;/category_id&gt;&lt;/action&gt;&#xD;
+        &lt;action method="setTitle" translate="value"&gt;&lt;value&gt;Product Slider&lt;/value&gt;&lt;/action&gt;&lt;action method="setProductCount"&gt;&lt;count&gt;12&lt;/count&gt;&lt;/action&gt;&lt;/block&gt;&lt;/reference&gt;&#xD;
+&#xD;
+    PHTML:&#xD;
+        echo $this-&gt;getLayout()-&gt;createBlock('vsourz_catproduct/productslider')-&gt;setCategoryId('2')-&gt;setTemplate('vsourz/products/productslider.phtml')-&gt;setTitle('Product Slider')-&gt;setProductCount('12')-&gt;toHtml(); &#xD;
+&#xD;
+Shortcode Parameters: &#xD;
+&#xD;
+There are three main parameters which you need through short code for it function properly&#xD;
+1) Category Id: Each short has category id passed. This value is the id of the category whose product you want to display in the product slider.&#xD;
+2) Products Count: Maximum numbers of product to be displayed in slider.&#xD;
+3) Title: Title of the required product slider is displayed over here.&#xD;
+&#xD;
+We have used OWL Carousel for slide effect. For more information on OWL Carousel, please visit official website here</description>
+    <notes>- Some changes on template&#xD;
+- Some CSS changes</notes>
+    <authors><author><name>Vsourz Digital</name><user>MAG002979323</user><email>mehul@vsourz.com</email></author></authors>
+    <date>2015-09-08</date>
+    <time>08:05:07</time>
+    <contents><target name="magecommunity"><dir name="Vsourz"><dir name="Catproduct"><dir name="Block"><file name="Productslider.php" hash="cbe63937440d684a696d190f8573dc7e"/></dir><dir name="Helper"><file name="Data.php" hash="26e6d22c583eb4dcbcdef693a5d68524"/></dir><dir name="Model"><file name="Productslider.php" hash="8976d3be77ecf1fd552d1e16c63c3211"/><dir name="Source"><file name="Truefalse.php" hash="8965df30a8eb5e94d9edc421471c02b5"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="9735257759e52018748472c0e09a4dc6"/><file name="config.xml" hash="cdbc915bacbab0a8e9013a51ec3e2da4"/><file name="system.xml" hash="4466fccbcc0d6ffb8948c18bc15cb337"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Vsourz_Catproduct.xml" hash="7f0e1b7543955090c0526f866d0c3e44"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="vsourz"><file name="products_slider.xml" hash="84af540c674e1d390367752b30fb3bd9"/></dir></dir><dir name="template"><dir name="vsourz"><dir name="products"><file name="productslider.phtml" hash="657ef2eb5e583b7ffad5d57396ce25e6"/></dir></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="vsourz"><file name="products_slider.xml" hash="b000d1a73c5619a4c251559c006f05f9"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><dir name="product_slider"><file name="owl.carousel.css" hash="d49fbfc6c0444e7c67b2ee7ae284a293"/><file name="owl.theme.css" hash="a361030c37b888ccf0bedb5cf308bfac"/><file name="owl.transitions.css" hash="b1bdaeac4065bf67a7d7a06213192964"/><file name="product_slider.css" hash="b7e960eb0574b554c24e2f5e4981ac72"/></dir></dir><dir name="js"><dir name="product_slider"><file name="jquery-1.10.2.min.js" hash="628072e7212db1e8cdacb22b21752cda"/><file name="owl.carousel.min.js" hash="8c52f27fcac36c7667f8fb846e1e94d5"/></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="vsourz"><dir name="productslider"><file name="arrow.gif" hash="5034704a76cd55c1cbcbc58ea6bf523f"/><file name="cross.gif" hash="ba9a274b9323753cd95bc3b1eb2f4e5f"/><file name="hs.png" hash="fefa1a03d92ebad25c88dca94a0b63db"/><file name="hv.png" hash="990d71cada17da100653636cf8490884"/><file name="jscolor.js" hash="a26701f49bf33da8dc48f3431e5f4f42"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
