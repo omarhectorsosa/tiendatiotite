@@ -53,7 +53,7 @@
                 <!-- Remove items which the RWD package is not dependent upon -->
                 <action method="removeItem"><type>skin_js</type><name>js/ie6.js</name></action>
 
-                <!-- Add vendor dependencies -->
+               <!-- Add vendor dependencies -->
                 <action method="addItem"><type>skin_js</type><name>js/lib/jquery-1.10.2.min.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/lib/modernizr.custom.min.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/lib/selectivizr.js</name></action>
