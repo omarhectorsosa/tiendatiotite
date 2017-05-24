@@ -1,4 +1,4 @@
-/**
+	/**
  * Magento
  *
  * NOTICE OF LICENSE
@@ -346,7 +346,7 @@ p.required { font-size:10px; text-align:right; color:#f00; }
 .data-table tfoot {}
 .data-table tr.first {}
 .data-table tr.last {}
-.data-table tr.odd {}
+.data-table tr.odd {background-color:#f6f6f6;}
 .data-table tr.even { background-color:#f6f6f6; }
 .data-table tbody.odd {}
 .data-table tbody.odd td { border-width:0 1px; }
@@ -448,7 +448,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Header ================================================================================ */
-.logo { float:left; }
+.logo { /*float:left;*/ }
 .header-container {}
 .header { padding:10px; border:1px solid #ddd; }
 .header .logo { float:left; text-decoration:none !important; }
@@ -510,6 +510,12 @@ tr.summary-details-excluded { font-style:italic; }
 /********** Navigation > */
 /* ======================================================================================= */
 
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 /* Sidebar =============================================================================== */
 .block { border:1px solid #ddd; margin:0 0 10px; }
@@ -927,7 +933,7 @@ tr.summary-details-excluded { font-style:italic; }
 .cart-table .item-msg { font-size:10px; }
 
 /* Shopping Cart Collateral boxes */
-.cart .cart-collaterals { padding:25px 0 0; }
+.cart .cart-collaterals { padding:25px 0 0; background-color:#f6f6f6;padding: 10px;}
 .cart .cart-collaterals .col2-set { float:left; width:800px; }
 
 .cart .crosssell {}

@@ -1408,7 +1408,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1230px;
+    width: 1310px;
   }
 }
 .container-fluid {
@@ -1606,10 +1606,10 @@ pre code {
     width: 58.33333333%;
   }
   .col-sm-6 {
-    width: 50%;
+    width:
   }
   .col-sm-5 {
-    width: 41.66666667%;
+    width: 22.666667%;
   }
   .col-sm-4 {
     width: 33.33333333%;
@@ -1747,6 +1747,7 @@ pre code {
   }
   .col-md-12 {
     width: 100%;
+    margin-top: 16px;
   }
   .col-md-11 {
     width: 91.66666667%;
@@ -4092,8 +4093,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  /*background-color: #f8f8f8;
+    border-color: #e7e7e7; */
 }
 .navbar-default .navbar-brand {
   color: #777;

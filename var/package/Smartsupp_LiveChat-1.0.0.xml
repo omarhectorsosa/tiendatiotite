@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Smartsupp_LiveChat</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.gnu.org/licenses/gpl-2.0.txt">GPL-2.0+</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Smartsupp Live Chat integration</summary>
+    <description>Smartsupp Live Chat integration module that adds Smartsupp Live Chat code to Magento.</description>
+    <notes>2016 Smartsupp.com</notes>
+    <authors><author><name>Smartsupp</name><user>vladimir</user><email>vladimir@smartsupp.com</email></author></authors>
+    <date>2016-01-26</date>
+    <time>03:34:17</time>
+    <contents><target name="magecommunity"><dir name="Smartsupp"><dir name="LiveChat"><dir name="Block"><dir name="Adminhtml"><dir name="Config"><dir name="Source"><file name="Hint.php" hash="4182d8947f63e389b1cc541e953a2c3a"/></dir></dir></dir><file name="Display.php" hash="b42607837016163d13e7551cdf79bd07"/></dir><dir name="Helper"><file name="Data.php" hash="fb242d29cba92b0aa308ea9f0feefebe"/></dir><dir name="Model"><dir name="Config"><dir name="Source"><file name="ShowHide.php" hash="8389889b2f69145593e5953f29415d0c"/></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="IndexController.php" hash="b69bf8bab0647ce08262827cee9fea40"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="70ac4ef9a749702d26040468d499b328"/><file name="config.xml" hash="8029fb80b6128ad159fe9f11245095ef"/><file name="system.xml" hash="915ac14bb863a66f8e39a7f6940b9c57"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="livechat.xml" hash="7f80555a8d54d88b0b92ccd4e209ad18"/></dir><dir name="template"><dir name="livechat"><file name="widget.phtml" hash="37681a10d42efd46d267d9ca246c67da"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Smartsupp_LiveChat.xml" hash="811c32231c3257c994c82ca5bb331d46"/></dir></target><target name="magelocale"><dir><dir name="cs_CZ"><file name="Smartsupp_LiveChat.csv" hash="5fba573b1723bc948c1869c4361d9a08"/></dir><dir name="sk_SK"><file name="Smartsupp_LiveChat.csv" hash="84040aece5ceff786ea1d3e81768ea35"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
