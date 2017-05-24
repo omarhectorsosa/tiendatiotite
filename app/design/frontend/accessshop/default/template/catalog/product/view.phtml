@@ -15,9 +15,7 @@
     var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
 </script>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
-<div class="product-view">
-
-    <div class="product-essential">
+<div class="product-view"><div class="product-essential">
         <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
             <?php echo $this->getBlockHtml('formkey') ?>
             <div class="no-display">
@@ -136,8 +134,7 @@
         //]]>
     </script>
 </div>
-
-<div class="product-collateral">
+    <div class="product-collateral">
         <?php /* foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
             <div class="box-collateral <?php echo "box-{$alias}"?>">
                 <?php if ($title = $this->getChildData($alias, 'title')):?>
@@ -150,7 +147,7 @@
         $customtab1 = Mage::getModel('cms/block')->load('custom-tab1');
         $customtab2 = Mage::getModel('cms/block')->load('custom-tab2');
         ?>
-        
+        <!-- TAB NAVEGACION -->
         <ul class="nav nav-tabs" role="tablist">
             <?php $i=0; foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
             <li class="<?php if($i==0){echo "active";}?>">
@@ -163,11 +160,17 @@
                 </a>
             </li>             
             <?php $i++; endforeach;?>
-            <li><a data-toggle="tab" class="reviews" name="reviews-tab" href="#reviews">Reviews</a></li>
+            <li><a data-toggle="tab" class="reviews" name="reviews-tab" href="#reviews">Revision</a></li>
             <li><a data-toggle="tab" href="#product-tags">Tags</a></li>
-            <li><a data-toggle="tab" href="#custom-tab1"><?php echo($customtab1->getTitle()!='')?$customtab1->getTitle():'Custom Tab 1';?></a></li>
-            <li><a data-toggle="tab" href="#custom-tab2"><?php echo($customtab2->getTitle()!='')?$customtab2->getTitle():'Custom Tab 2';?></a></li>
+            <?php if($customtab1->getIsActive()) { ?>
+                <li><a data-toggle="tab" href="#custom-tab1"><?php echo($customtab1->getTitle()!='')?$customtab1->getTitle():'Custom Tab 1';?></a></li>
+            <?php } ?>
+            <?php if($customtab2->getIsActive()) { ?>
+                <li><a data-toggle="tab" href="#custom-tab2"><?php echo($customtab2->getTitle()!='')?$customtab2->getTitle():'Custom Tab 2';?></a></li>
+            <?php } ?>
         </ul>
+
+        <!-- TAB CONTENIDO -->
         <div class="tab-content">
             <?php $i=0; foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
             <div id="<?php echo "box-{$alias}"?>" class="tab-pane fade in <?php if($i==0){echo "active";}?>">
@@ -184,22 +187,24 @@
                 <?php if($customtab1->getContent()!=''){echo $customtab1->getContent();}
                 else{?>
                 <h2>Custom Tab Content 1</h2>
-                <p>Custom Variants and Options let you create product customization options and fields quickly and easily. Any product can have custom variants and options – this can be configured in its product configuration. Custom variants and options can be created for products as required or non-required options. They can affect the total price of the product by a fixed amount or percentage.
+                <p>Custom Variants and Options let you create product customization options and fields quickly and easily. Any product can have custom variants and options ï¿½ this can be configured in its product configuration. Custom variants and options can be created for products as required or non-required options. They can affect the total price of the product by a fixed amount or percentage.
                     <br />
-                    In other words, custom variants and options allow you to make products that are unique and individualized. Whether it’s a gift with a special message, a sweatshirt with custom embroidered text, or anything in between – possibilities are limitless.</p>
+                    In other words, custom variants and options allow you to make products that are unique and individualized. Whether itï¿½s a gift with a special message, a sweatshirt with custom embroidered text, or anything in between ï¿½ possibilities are limitless.</p>
                     <?php }?>
                 </div>
-                <div id="custom-tab2" class="tab-pane fade in">
+            <div id="custom-tab2" class="tab-pane fade in">
                     <?php if($customtab2->getContent()!=''){echo $customtab2->getContent();}
                     else{?>
                     <h2>Custom Tab Content 2</h2>
-                    <p>Custom Variants and Options let you create product customization options and fields quickly and easily. Any product can have custom variants and options – this can be configured in its product configuration. Custom variants and options can be created for products as required or non-required options. They can affect the total price of the product by a fixed amount or percentage.
+                    <p>Custom Variants and Options let you create product customization options and fields quickly and easily. Any product can have custom variants and options ï¿½ this can be configured in its product configuration. Custom variants and options can be created for products as required or non-required options. They can affect the total price of the product by a fixed amount or percentage.
                         <br />
-                        In other words, custom variants and options allow you to make products that are unique and individualized. Whether it’s a gift with a special message, a sweatshirt with custom embroidered text, or anything in between – possibilities are limitless.</p>
+                        In other words, custom variants and options allow you to make products that are unique and individualized. Whether itï¿½s a gift with a special message, a sweatshirt with custom embroidered text, or anything in between ï¿½ possibilities are limitless.</p>
                         <?php }?>
                     </div>
-                </div>
-                <?php echo $this->getChildHtml('upsell_products') ?>
-                <?php //echo $this->getChildHtml('product_additional_data') ?>
-            </div>
         </div>
+
+        <?php echo $this->getChildHtml('upsell_products') ?>
+        <?php //echo $this->getChildHtml('product_additional_data') ?>
+
+    </div>
+</div>

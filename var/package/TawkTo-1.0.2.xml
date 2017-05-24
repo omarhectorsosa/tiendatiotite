@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>TawkTo</name>
+    <version>1.0.2</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Instantly chat with visitors on your website with the free tawk.to chat widget.</summary>
+    <description>Instantly chat with visitors on your website with the free tawk.to chat widget.</description>
+    <notes>Fix php error and ACL</notes>
+    <authors><author><name>tawk to</name><user>tawk</user><email>accounts@tawk.to</email></author></authors>
+    <date>2016-10-12</date>
+    <time>08:39:49</time>
+    <contents><target name="magecommunity"><dir name="Tawk"><file name="LICENSE.txt" hash="59563e7be45096d0833dade102989042"/><dir name="Widget"><dir name="Block"><dir name="Admin"><file name="Customization.php" hash="a8139ef2e79b59f93548e5d07da65fa5"/></dir><file name="Embed.php" hash="b46cda29174cf0a41df2265c3c080b24"/></dir><dir name="Helper"><file name="Data.php" hash="d95fbd5c2dcddd4d4cd6a258e3ecc757"/></dir><dir name="Model"><dir name="Resource"><file name="Setup.php" hash="1bfbb876cd8e7c5368b1956ebd30bfa8"/><dir name="Widget"><file name="Collection.php" hash="fe487e26fc7ccb7f77e31cf7185b7b1d"/></dir><file name="Widget.php" hash="8418a9cc79446416c3b845adc944a7c8"/></dir><file name="Widget.php" hash="7209d0de5fca8beb8e53c28e776fbfb5"/></dir><dir name="controllers"><file name="AdminController.php" hash="29dcf7a6376513d277f2409f679e27e5"/></dir><dir name="etc"><file name="adminhtml.xml" hash="025620258394b1ba9171b8cf86810d69"/><file name="config.xml" hash="8cda42d022cd07c458f2c3c498228c8f"/></dir><dir name="sql"><dir name="tawkwidget_setup"><file name="mysql4-install-1.0.0.php" hash="0391c056745280588087c95a022a99e8"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="tawk"><file name="customization.phtml" hash="18e6f7b64abf26087f52456d685476a9"/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="tawk"><file name="embed.phtml" hash="d71d1562efbc99e572657808386746af"/></dir></dir><dir name="layout"><file name="tawkwidget.xml" hash="5e86aa578af42f867b24fe25898b2d68"/></dir></dir></dir><dir name="default"><dir name="default"><dir name="layout"><file name="tawkwidget.xml" hash="5e86aa578af42f867b24fe25898b2d68"/></dir><dir name="template"><dir name="tawk"><file name="embed.phtml" hash="d71d1562efbc99e572657808386746af"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Tawk_Widget.xml" hash="bf8abcfaa102aa7d1f9edf409a3bcfa5"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.4.0</min><max>7.0.12</max></php></required></dependencies>
+</package>

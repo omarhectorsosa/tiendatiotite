@@ -54,6 +54,7 @@
         
         <!-- Uncomment these tags to remove selected blocks -->
         <!--
+
             <remove name="right.reports.product.viewed" />
             <remove name="left.reports.product.viewed" />
             <remove name="catalog.compare.sidebar"/>
@@ -72,11 +73,30 @@
         <remove name="checkout_cart_link" />
         <remove name="paypal.partner.right.logo"/>
         <remove name="left.newsletter"/>
+        <remove name="order_link"/>
+
+        <reference name="top.links">
+            <remove name="wishlist_link"/>
+        </reference>
 
         <reference name="top.links">
             <block type="checkout/links" name="checkout_link">
                 <action method="addCheckoutLink"></action>
             </block>
+        </reference>
+
+        <!-- Mage_Customer -->
+        <reference name="top.links">
+            <action method="addLink" translate="label title" module="customer">
+                <label>My Account</label>
+                <url helper="customer/getAccountUrl"/>
+                <title>My Account</title><prepare/><urlParams/>
+                <position>4</position>
+                <liParams>id="about-us-li"</liParams>
+                <aParams>class="top-link" id="about-us-top-link"</aParams>
+                <beforeText/>
+                <afterText><![CDATA[<span class="icon">]]><![CDATA[</span>]]></afterText>
+            </action>
         </reference>
 
         <reference name="header">

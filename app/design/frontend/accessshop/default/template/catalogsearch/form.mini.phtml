@@ -36,12 +36,10 @@
                 <?php endforeach;?>
                 
             </select>
-            <input id="search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="form-control" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" placeholder="<?php echo $this->__('Search...') ?>" />
             </div>
-            <span class="input-group-btn">
-                <button type="submit" class="searchbtn"><i class="fa fa-search"></i></button>
-            </span>
         </div>
+        <input id="search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="form-control" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" placeholder="<?php echo $this->__('Search...') ?>" />
+        <button type="submit" class="searchbtn"><i class="fa fa-search"></i></button>
     </div>
     <div id="search_autocomplete" class="search-autocomplete"></div>
 </form>
