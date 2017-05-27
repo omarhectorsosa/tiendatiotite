@@ -11,21 +11,21 @@
 <div class="header-top">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div id="info-contacto" class="col-sm-6">
                 <div class="left-header-top">
                     <?php echo $this->getChildHtml('block_header_links_top_left'); ?>
                     <?php echo $this->getChildHtml('store_language') ?>
                     <?php echo $this->getChildHtml('topContainer'); ?>
                 </div>
             </div>
-            <div class="col-sm-4 text-center">
+            <div id="div-logo" class="col-sm-4 text-center">
                 <div class="logo">
                     <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">
                         <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 pull-right">
+            <div id="div-links" class="col-sm-6 pull-right">
                 <div class="right-header-top">
                     <div class="row">
                             <?php echo $this->getChildHtml('topLinks');?>
@@ -57,7 +57,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-sm-8 top-search text-left">
+            <div id="div-search" class="col-sm-8 top-search text-left">
                 <?php echo $this->getChildHtml('topSearch') ?>
             </div>
         </div>

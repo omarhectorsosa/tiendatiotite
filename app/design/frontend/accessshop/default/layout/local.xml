@@ -77,6 +77,7 @@
 
         <reference name="top.links">
             <remove name="wishlist_link"/>
+			<remove name="checkout_link"/>
         </reference>
 
         <reference name="top.links">
@@ -99,6 +100,14 @@
             </action>
         </reference>
 
+		<reference name="top.links">
+            <action method="addLink" translate="label title" module="customer"><label>Log Out</label><url helper="customer/getLogoutUrl"/><title>Log Out</title><prepare/><urlParams/><position>100</position></action>
+        </reference>
+		
+		<!--reference name="top.links">
+            <action method="addLink" translate="label title" module="customer"><label>Log In</label><url helper="customer/getLoginUrl"/><title>Log In</title><prepare/><urlParams/><position>100</position></action>
+        </reference-->
+		
         <reference name="header">
             <block type="core/template" name="block_header_links_top_left" as="block_header_links_top_left" template="page/html/header_left_links.phtml" />
             <block type="cms/block" name="block_header_links_right" as="block_header_links_right">
