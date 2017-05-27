@@ -1372,7 +1372,7 @@ top: 6px;}
      right: 0px;
      text-align: left;
      top: 42px;
-     width: 256px;
+     width: 265px;
      z-index: 999;
    }
    .topcart-content p{
@@ -2245,4 +2245,41 @@ top: 6px;}
   text-indent: -9999px;
   background-position: 4px -44px;
   margin-left: 6px;
+}
+
+@media (max-width: 992px) {
+  #info-contacto {
+    display:none;
+  }
+  .logo {
+    padding: 0px 0 0px 7px;
+    height: 63px;
+  }
+
+  #div-search {
+    display:none;
+  }
+
+  .right-header-top .row {
+    text-align: center;
+  }
+}
+
+@media (max-width: 651px) {
+  #info-contacto {
+    display:none;
+  }
+  .logo {
+    padding: 0px 0 0px 7px;
+    height: 63px;
+  }
+
+  #div-search {
+    display:none;
+  }
+
+  .right-header-top .row {
+    margin-right: 5;
+    margin-left: 5;
+  }
 }
