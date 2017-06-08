@@ -1609,7 +1609,7 @@ pre code {
     width:
   }
   .col-sm-5 {
-    width: 22.666667%;
+    width: 32.666667%;
   }
   .col-sm-4 {
     width: 33.33333333%;
@@ -1898,6 +1898,9 @@ pre code {
   }
   .col-md-offset-0 {
     margin-left: 0;
+  }
+  .col-md-category {
+	 width: 43.33333333%;
   }
 }
 @media (min-width: 1200px) {

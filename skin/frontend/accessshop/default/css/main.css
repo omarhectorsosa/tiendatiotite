@@ -335,7 +335,7 @@ top: 6px;}
   .col-main{
     border: none;
     padding: 0;
-	background: #f2f2f2;
+	/*background: #f2f2f2;*/
 	padding:10px;
   }
   .col2-layout .col-main { 
@@ -2283,3 +2283,10 @@ top: 6px;}
     margin-left: 5;
   }
 }
+
+.ico-instagram {
+	background-image:url("../images/instagram.png")
+}
+
+
+
