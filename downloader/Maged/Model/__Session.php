@@ -108,8 +108,6 @@ class Maged_Model_Session extends Maged_Model
             $this->set('return_url', $_GET['return']);
         }
 
-        //$current_user = Mage::getSingleton('admin/session')->getUser();
-
         if ($this->_checkUserAccess()) {
             return $this;
         }
@@ -170,7 +168,7 @@ class Maged_Model_Session extends Maged_Model
                 $this->controller()->setAction('login');
             }
         }
-        return true;
+        return false;
     }
 
     /**
@@ -266,7 +264,7 @@ class Maged_Model_Session extends Maged_Model
     public function validateFormKey()
     {
         if (!($formKey = $_REQUEST['form_key']) || $formKey != $this->getFormKey()) {
-            return true;
+            return false;
         }
         return true;
     }
